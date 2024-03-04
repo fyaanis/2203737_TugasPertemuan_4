@@ -1,0 +1,27 @@
+package pertemuan4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author NISWA
+ */
+
+public class Soal1 {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Masukkan nilai n (n >= 1) :");
+        int n = scanner.nextInt();
+        
+        if (n >= 1) {
+            System.out.println("Deret bilangan dari 1 sampai " + n + ":");
+            for (int i = 1; i <= n; i++) {
+                System.out.println(i);
+            }
+        } else {
+            System.out.println("Oops! Kamu salah input, nilai n harus lebih bear dari 0.");
+        }
+    }
+}

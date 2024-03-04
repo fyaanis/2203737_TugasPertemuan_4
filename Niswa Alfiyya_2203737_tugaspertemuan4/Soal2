@@ -1,0 +1,31 @@
+package pertemuan4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author NISWA
+ */
+
+public class Soal2 {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Pastikan batas awal < batas akhir yaa! ");
+        
+        System.out.print("Masukkan batas awal: ");
+        int awal = scanner.nextInt();
+        
+        System.out.print("Masukkan batas akhir: ");
+        int akhir = scanner.nextInt();
+        
+        int count = 0;
+        for (int i = awal; i <= akhir; i++) {
+            if (i % 2 != 0) {
+                count++;
+            }
+        }
+        
+        System.out.println("Jumlah bilangan ganjil dari " + awal + " hingga " + akhir + " adalah: " + count);
+    }
+}
